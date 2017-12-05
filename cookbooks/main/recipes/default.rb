@@ -198,3 +198,7 @@
 
 #uncomment to include the classiclink recipe
 #include_recipe "classiclink"
+
+#uncomment to include the pg_idle_txn recipe.
+#pg_idle_txn setups a new cron which kills the idle processes in postgresql 
+include_recipe 'pg_idle_txn'
