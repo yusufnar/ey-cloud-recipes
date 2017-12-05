@@ -17,7 +17,7 @@ if node[:instance_role] == 'db_master'
    day      '*'
    month    '*'
    weekday  '*'
-   command  '/engineyard/bin/terminate.sh >> /var/log/terminate.log 2>&1'
+   command  '/engineyard/bin/terminate_idle_txn.sh >> /var/log/terminate.log 2>&1'
  end
 
 end 
